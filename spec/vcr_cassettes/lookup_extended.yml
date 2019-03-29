@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.debounce.io/v1/?api=yolo-debounce-api-key&append=true&email=mohsen@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.debounce.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 29 Mar 2019 14:59:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6ec733728113936f8edb85abdbc431ab1553871584; expires=Sat, 28-Mar-20
+        14:59:44 GMT; path=/; domain=.debounce.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.33
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4bf2b59a3d1dcc85-WAW
+    body:
+      encoding: ASCII-8BIT
+      string: '{"debounce":{"email":"mohsen@gmail.com","fullname":"Mohsen Javdani","firstname":"Mohsen","lastname":"Javdani","photo":"https://lh3.googleusercontent.com/a-/AAuE7mChkYGFq_3AAacjlUZaQqfKnfiawLJno1EkDzWMoQ","code":"5","role":"false","free_email":"true","result":"Safe
+        to Send","reason":"Deliverable","send_transactional":"1"},"success":"1","balance":"52"}'
+    http_version:
+  recorded_at: Fri, 29 Mar 2019 14:59:45 GMT
+recorded_with: VCR 4.0.0
