@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '>= 0.66'
   spec.add_development_dependency 'vcr', '>= 4.0'
   spec.add_development_dependency 'webmock', '>= 3.0'
+
+  spec.required_ruby_version = '>= 2.6'
 end
