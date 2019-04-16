@@ -1,6 +1,8 @@
 # DebounceIo
 
-DebounceIo is a Ruby wrapper for the [DebounceIo API](https://debounce.io/email-verification-api/).  
+[![Build Status](https://travis-ci.com/onshi/debounce_io.svg?branch=master)](https://travis-ci.com/onshi/debounce_io)
+
+DebounceIo is a Ruby wrapper for the [DebounceIo API](https://debounce.io/email-verification-api/).
 
 ## Installation
 
@@ -33,7 +35,7 @@ DebounceIo::Lookup.call('example@example.com')
 #                 :reason => "Bounce",
 #     :send_transactional => "0"
 # }
- 
+
 # extended lookup version
 DebounceIo::Lookup.call('mohsen@gmail.com', append: true)
 # OpenStruct {
